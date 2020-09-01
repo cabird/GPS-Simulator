@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Windows.Forms;
@@ -137,14 +138,30 @@ namespace GPS_Simulator
             this.detailed_devinfo.Text += "1. Download provisioning package for your device....\n";
             string prov_pkg_url = device_utils.get_ddi_image_url(device);
 
-            string local_package_file = @"C:\temp\" + device.FullVersion + ".zip";
+            // make sure the temp directory exists.  If not, create it
+            string tmpPath = Path.GetTempPath();
+            if (!Directory.Exists(tmpPath))
+            {
+                this.detailed_devinfo.Text += $"Temp directory path {tmpPath} doesn't exist. Attempting to create it.";
+                try
+                {
+                    Directory.CreateDirectory(tmpPath);
+                } catch (Exception ex)
+                {
+                    this.detailed_devinfo.Text += $"Error creating directory {tmpPath}.  Please create it yourself and rerun.";
+                    return;
+                }
+                
+            }
+
+            string local_package_file = Path.Combine(tmpPath, device.FullVersion + ".zip");
             try
             {
                 WebClient webClient = new WebClient();
                 webClient.Headers.Add("cookie", "");
                 webClient.DownloadFile(new Uri(prov_pkg_url), local_package_file);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 this.detailed_devinfo.Text += "we can't find" + device.FullVersion + ".zip from our repository," +
                     " please go to apple.com download the image and manually provision your device. \n";
