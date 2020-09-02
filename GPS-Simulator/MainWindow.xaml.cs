@@ -238,6 +238,90 @@ namespace GPS_Simulator
             timer_callback.walking_speed = c_fast_walking_speed * 3;
         }
 
+        private Location GetLocationForMousePosition(Point mousePosition)
+        {
+            // WARNING:
+            // It seems to be a bug of Bing Map WPF control, that when the control is 
+            // not in full screen mode, the coords calculation got some offsets. 
+            // make a dirty adjustment here.
+            mousePosition.Offset(-Width * 3 / 16, 0);
+            // Convert the mouse coordinates to a location on the map
+            Location location = myMap.ViewportPointToLocation(mousePosition);
+
+            string elevationUrl = spell_elevation_query_url(location);
+            List<double> elevations = get_elevations(elevationUrl);
+            if (elevations.Count > 0)
+            {
+                location.Altitude = elevations[0];
+            }
+
+            return location;
+        }
+
+        private void walk_to_location(object sender, MouseButtonEventArgs e)
+        {
+
+            e.Handled = true;
+
+            Point mousePosition = e.GetPosition(this);
+            MapPolyline polyline = new MapPolyline();
+
+            Location mouseLocation = GetLocationForMousePosition(e.GetPosition(this));
+
+            if (location_service.LastKnownLocation == null)
+            {
+                TeleportToLocation(mouseLocation);
+                return;
+            }
+
+            polyline.Locations = new LocationCollection();
+
+            polyline.Locations.Add(location_service.LastKnownLocation);
+            
+                      
+            // Determine the location to place the pushpin at on the map.
+
+            // Get the mouse click coordinates
+            
+
+            // The pushpin to add to the map.
+            if (teleport_pin != null)
+            {
+                myMap.Children.Remove(teleport_pin);
+            }
+            else
+            {
+                teleport_pin = new Pushpin();
+            }
+
+          
+
+            teleport_pin.Location = mouseLocation;
+
+            // Adds the pushpin to the map.
+            myMap.Children.Add(teleport_pin);
+
+            // update the coords
+            lat.Text = mouseLocation.Latitude.ToString();
+            lon.Text = mouseLocation.Longitude.ToString();
+            alt.Text = mouseLocation.Altitude.ToString();
+            // add the end location:
+            polyline.Locations.Add(teleport_pin.Location);
+
+
+            // initialize the timer call back
+            if (timer_callback == null)
+            {
+                timer_callback = new walking_timer_callback(polyline, myMap, this);
+            }
+
+            timer_callback.set_route(polyline);
+            walking_timer.Start();
+
+
+
+        }
+
         /// <summary>
         ///  start to walk and auto repeat.
         /// </summary>
@@ -309,6 +393,8 @@ namespace GPS_Simulator
         /// <param name="e"></param>
         private void tele_Button_Click(object sender, RoutedEventArgs e)
         {
+
+
             if (cur_walking_state != e_walking_state.walking_stopped)
             {
                 System.Windows.Forms.MessageBox.Show("Quit from walking mode first.");
@@ -355,6 +441,10 @@ namespace GPS_Simulator
         /// <param name="e"></param>
         private void Map_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+            // TODO - CAB
+            walk_to_location(sender, e);
+            return;
+
             // Disables double-click teleport when it is in walking mode.
             if (cur_walking_state == e_walking_state.walking_active)
             {
@@ -377,8 +467,13 @@ namespace GPS_Simulator
             mousePosition.Offset(-Width * 3 / 16, 0);
 
             // Convert the mouse coordinates to a location on the map
-            Location pinLocation = myMap.ViewportPointToLocation(mousePosition);
+            Location location = myMap.ViewportPointToLocation(mousePosition);
+            TeleportToLocation(location);
 
+        }
+
+        private void TeleportToLocation(Location location)
+        { 
             // The pushpin to add to the map.
             if (teleport_pin != null)
             {
@@ -389,24 +484,24 @@ namespace GPS_Simulator
                 teleport_pin = new Pushpin();
             }
 
-            string elevationUrl = spell_elevation_query_url(pinLocation);
+            string elevationUrl = spell_elevation_query_url(location);
             List<double> elevations = get_elevations(elevationUrl);
             if (elevations.Count > 0)
             {
-                pinLocation.Altitude = elevations[0];
+                location.Altitude = elevations[0];
             }
 
-            teleport_pin.Location = pinLocation;
+            teleport_pin.Location = location;
 
             // Adds the pushpin to the map.
             myMap.Children.Add(teleport_pin);
 
             // update the coords
-            lat.Text = pinLocation.Latitude.ToString();
-            lon.Text = pinLocation.Longitude.ToString();
-            alt.Text = pinLocation.Altitude.ToString();
+            lat.Text = location.Latitude.ToString();
+            lon.Text = location.Longitude.ToString();
+            alt.Text = location.Altitude.ToString();
 
-            location_service.GetInstance(this).UpdateLocation(pinLocation);
+            location_service.GetInstance(this).UpdateLocation(location);
         }
 
         private void device_Button_Click(object sender, RoutedEventArgs e)

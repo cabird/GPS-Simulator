@@ -218,7 +218,7 @@ namespace GPS_Simulator
             }));
         }
 
-        public void UpdateLocation(string Longitude, string Latitude, string Altitude, DeviceModel itm)
+        private void UpdateLocation(string Longitude, string Latitude, string Altitude, DeviceModel itm)
         {
             var size = BitConverter.GetBytes(0u);
             Array.Reverse(size);
@@ -290,6 +290,8 @@ namespace GPS_Simulator
 
         public void UpdateLocation(Location location)
         {
+            LastKnownLocation = location;
+
             // no device is connected.
             if (Devices.Count == 0)
             {
@@ -305,7 +307,12 @@ namespace GPS_Simulator
                 DeviceModel itm = Devices[i];
                 UpdateLocation(Longitude, Latitude, Altitude, itm);
             }
+
+            
         }
+
+
+        public static Location LastKnownLocation { private set; get; }
     }
 
     public class DeviceModel
