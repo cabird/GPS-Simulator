@@ -22,6 +22,9 @@ using System.Xml.Linq;
 using System.Net.Http;
 using System.IO;
 using System.Threading.Tasks;
+using Geo;
+using Geo.Gps.Serialization;
+using Geo.Gps;
 
 namespace GPS_Simulator
 {
@@ -240,14 +243,10 @@ namespace GPS_Simulator
 
         private Location GetLocationForMousePosition(Point mousePosition)
         {
-            // WARNING:
-            // It seems to be a bug of Bing Map WPF control, that when the control is 
-            // not in full screen mode, the coords calculation got some offsets. 
-            // make a dirty adjustment here.
-            mousePosition.Offset(-Width * 3 / 16, 0);
-            // Convert the mouse coordinates to a location on the map
-            Location location = myMap.ViewportPointToLocation(mousePosition);
+            var point = myMap.TransformToAncestor(this).Transform(new Point(0, 0));
+            mousePosition.Offset(-point.X, -point.Y);
 
+            Location location = myMap.ViewportPointToLocation(mousePosition);
             string elevationUrl = spell_elevation_query_url(location);
             List<double> elevations = get_elevations(elevationUrl);
             if (elevations.Count > 0)
@@ -282,7 +281,6 @@ namespace GPS_Simulator
             // Determine the location to place the pushpin at on the map.
 
             // Get the mouse click coordinates
-            
 
             // The pushpin to add to the map.
             if (teleport_pin != null)
@@ -293,8 +291,6 @@ namespace GPS_Simulator
             {
                 teleport_pin = new Pushpin();
             }
-
-          
 
             teleport_pin.Location = mouseLocation;
 
@@ -317,9 +313,6 @@ namespace GPS_Simulator
 
             timer_callback.set_route(polyline);
             walking_timer.Start();
-
-
-
         }
 
         /// <summary>
@@ -329,21 +322,21 @@ namespace GPS_Simulator
         /// <param name="e"></param>
         private void walk_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (g_gpx_file_name == null)
+            /*if (g_gpx_file_name == null)
             {
                 System.Windows.Forms.MessageBox.Show("Please load a GPX file and then walk.");
                 return;
-            }
+            }*/
 
             // initialize the timer call back
             if (timer_callback == null)
             {
-                timer_callback = new walking_timer_callback(g_polyline, myMap, this);
+                timer_callback = new walking_timer_callback(polyline, myMap, this);
             }
 
             if (timer_callback.m_polyline == null)
             {
-                timer_callback.set_route(g_polyline);
+                timer_callback.set_route(polyline);
             }
 
             switch (cur_walking_state)
@@ -434,6 +427,166 @@ namespace GPS_Simulator
             location_service.GetInstance(this).UpdateLocation(tele);
         }
 
+        List<Location> locations;
+        List<Pushpin> pins;
+        MapPolyline polyline;
+
+        private void AddWayPoint(Location location)
+        {
+            if (locations == null)
+            {
+                locations = new List<Location>();
+            }
+
+            locations.Add(location);
+        }
+
+        private void DrawWayPoints()
+        {
+            ClearWayPoints();
+
+            LocationCollection lc = new LocationCollection();
+            
+            if (pins == null)
+            {
+                pins = new List<Pushpin>();
+            }
+
+            foreach (var loc in locations)
+            {
+                lc.Add(loc);
+                var pin = new Pushpin();
+                pin.Location = loc;
+
+                pin.MouseDown += Pin_MouseDown;
+                pins.Add(pin);
+
+                pin.Background = new System.Windows.Media.SolidColorBrush(
+                    System.Windows.Media.Colors.ForestGreen);
+                myMap.Children.Add(pin);
+
+            }
+
+            // draw the tack on map
+            polyline = new MapPolyline();
+            polyline.Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.
+                Colors.ForestGreen);
+
+            polyline.StrokeThickness = 3;
+            polyline.Opacity = 0.7;
+
+            polyline.Locations = lc;
+
+            myMap.Children.Add(polyline);
+
+        }
+
+        /* 
+        //dragging pushpin from SO 
+        Vector _mouseToMarker;
+        private bool _dragPin;
+        public Pushpin SelectedPushpin { get; set; }
+
+        void pin_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+          e.Handled = true;
+          SelectedPushpin = sender as Pushpin;
+          _dragPin = true;
+          _mouseToMarker = Point.Subtract(
+            map.LocationToViewportPoint(SelectedPushpin.Location), 
+            e.GetPosition(map));
+        }
+
+        private void map_MouseMove(object sender, MouseEventArgs e)
+        {
+          if (e.LeftButton == MouseButtonState.Pressed)
+          {
+            if (_dragPin && SelectedPushpin != null)
+            {
+              SelectedPushpin.Location = map.ViewportPointToLocation(
+                Point.Add(e.GetPosition(map), _mouseToMarker));
+              e.Handled = true;
+            }
+          }
+        }  
+        */
+
+        Pushpin selectedPushpin;
+        Location oldLocation;
+        bool _dragPin = false;
+        Vector _mouseToMarker;
+
+        private void Pin_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            e.Handled = true;
+
+            // we only care about this event on a pushpin
+            var pushpin = sender as Pushpin;
+            if (pushpin == null) return;
+
+            // we only care about right button click
+            if (e.RightButton == MouseButtonState.Pressed && e.LeftButton == MouseButtonState.Released)
+            { 
+                //remove the pushpin and redraw the route.
+                locations = locations.Where(loc => loc != pushpin.Location).ToList();
+                DrawWayPoints();
+            }
+
+            if (e.LeftButton == MouseButtonState.Pressed && e.RightButton == MouseButtonState.Released)
+            {
+                selectedPushpin = pushpin;
+                _dragPin = true;
+                oldLocation = selectedPushpin.Location;
+                _mouseToMarker = Point.Subtract(
+                  myMap.LocationToViewportPoint(selectedPushpin.Location),
+                  e.GetPosition(myMap));
+            }
+        }
+
+        private void map_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                e.Handled = true;
+                if (_dragPin && selectedPushpin != null)
+                {
+                    selectedPushpin.Location = myMap.ViewportPointToLocation(
+                      Point.Add(e.GetPosition(myMap), _mouseToMarker));
+                    e.Handled = true;
+
+                    
+                }
+                
+            }
+        }
+
+        private void map_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (_dragPin && selectedPushpin != null)
+            {
+                _dragPin = false;
+                locations = locations.Select(loc => loc == oldLocation ? selectedPushpin.Location : loc).ToList();
+                DrawWayPoints();
+            }
+        }
+
+        private void ClearWayPoints()
+        {
+            if (polyline != null)
+                myMap.Children.Remove(polyline);
+            if (pins != null)
+            {
+                foreach (var pin in pins)
+                {
+                    myMap.Children.Remove(pin);
+                }
+            }
+            pins = new List<Pushpin>();
+            
+        }
+
+        
+
         /// <summary>
         /// double click and teleport.
         /// </summary>
@@ -442,7 +595,12 @@ namespace GPS_Simulator
         private void Map_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             // TODO - CAB
-            walk_to_location(sender, e);
+            //walk_to_location(sender, e);
+
+            var loc = GetLocationForMousePosition(e.GetPosition(this));
+            AddWayPoint(loc);
+            DrawWayPoints();
+            e.Handled = true;
             return;
 
             // Disables double-click teleport when it is in walking mode.
@@ -673,6 +831,51 @@ namespace GPS_Simulator
                 lon.Text = it.loc.Longitude.ToString();
                 alt.Text = it.loc.Altitude.ToString();
             }
+        }
+
+        private void save_gpx_button_Click(object sender, RoutedEventArgs e)
+        {
+            var coords = locations.Select(l => new Coordinate(l.Latitude, l.Longitude)).ToList();
+
+            var gpx = new Gpx11Serializer();
+
+            var gpsData = new GpsData();
+
+            var track = new Track();
+            var segment = new TrackSegment();
+            track.Segments.Add(segment);
+
+            foreach (var loc in locations)
+            {
+                segment.Waypoints.Add(new Waypoint(loc.Latitude, loc.Longitude));
+            }
+
+            gpsData.Tracks.Add(track);
+            string gpxData = gpx.Serialize(gpsData);
+
+            SaveFileDialog gpx_save_dlg = new SaveFileDialog
+            {
+                InitialDirectory = @"D:\",
+                Title = "Save GPX Files",
+
+                CheckPathExists = true,
+
+                DefaultExt = "GPX",
+                Filter = "GPX files (*.gpx)|*.gpx",
+                FilterIndex = 2,
+                RestoreDirectory = true,
+
+            };
+
+            var result = gpx_save_dlg.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                if (gpx_save_dlg.FileName != null)
+                {
+                    File.WriteAllText(gpx_save_dlg.FileName, gpxData);
+                }
+            }
+            
         }
     }
 }

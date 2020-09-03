@@ -9,8 +9,12 @@ using System.Linq;
 
 namespace GPS_Simulator
 {
+    public enum EndOfRouteBehavior { Stop, Reverse, Loop }
+
     class walking_timer_callback
     {
+
+        public EndOfRouteBehavior end_of_route_behavior { get; set; } = EndOfRouteBehavior.Loop;
         public Location m_cur_location
         {
             set;
@@ -173,13 +177,16 @@ namespace GPS_Simulator
                 // the end of whole track.
                 if (m_cur_seg_index >= m_polyline.Locations.Count() - 1)
                 {
+                    // loop
                     m_cur_seg_index = 0;
 
                     // reverse the walk AB --> BA -->AB.
-                    for (int i = 0; i < m_polyline.Locations.Count; i++)
-                        m_polyline.Locations.Move(m_polyline.Locations.Count - 1, i);
-
-                    return m_polyline.Locations[0];
+                    if (end_of_route_behavior == EndOfRouteBehavior.Reverse)
+                    {
+                        for (int i = 0; i < m_polyline.Locations.Count; i++)
+                            m_polyline.Locations.Move(m_polyline.Locations.Count - 1, i);
+                        return m_polyline.Locations[m_cur_seg_index];
+                    }
                 }
 
                 double mode_dis = dis_walk_500ms - dis_to_next_seg;
@@ -205,6 +212,7 @@ namespace GPS_Simulator
             if (m_pin == null)
             {
                 m_pin = new Pushpin();
+                
             }
 
             m_pin.Location = m_cur_location;
