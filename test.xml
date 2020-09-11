@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Response xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/search/local/ws/rest/v1">
+  <Copyright>Copyright © 2020 Microsoft and its suppliers. All rights reserved. This API cannot be accessed and the content and any results may not be used, reproduced or transmitted in any manner without express written permission from Microsoft Corporation.</Copyright>
+  <BrandLogoUri>http://dev.virtualearth.net/Branding/logo_powered_by.png</BrandLogoUri>
+  <StatusCode>200</StatusCode>
+  <StatusDescription>OK</StatusDescription>
+  <AuthenticationResultCode>ValidCredentials</AuthenticationResultCode>
+  <TraceId>5619dfbb28094bfba4d45b32ad43132f|CO000010E2|0.0.0.0|CO00000896, Leg0-CO00002BD0|Ref A: 43D2CD59F293426F9AF5F7AF0441D79C Ref B: BY3EDGE0211 Ref C: 2020-09-04T21:04:24Z|Ref A: 7044054231E4477A915088C6725AFCBD Ref B: BY3EDGE0306 Ref C: 2020-09-04T21:04:24Z</TraceId>
+  <ResourceSets>
+    <ResourceSet>
+      <EstimatedTotal>1</EstimatedTotal>
+      <Resources>
+        <Route>
+          <Id>v70,h-956295272,i0,a0,cen-US,dAAAAAAAAAAA1,y0,s1,m2,o2,t0,wJvvnacDYR0CsWPymsIZewA2~AJI6cGeJGegAAADgAQAAgD8A0~MTc2MDkgTkUgMTA0dGggV2F5LCBSZWRtb25kLCBXQSA5ODA1Mg2~~~~v11,wZOWXwRi5R0CiX1s__ZJewA2~AJI6cGchg_kAAADgAYyZFT8A0~U2VhVGFjL0FpcnBvcnQsIFdB0~~~~v11,k1</Id>
+          <BoundingBox>
+            <SouthLatitude>47.446068</SouthLatitude>
+            <WestLongitude>-122.300279</WestLongitude>
+            <NorthLatitude>47.694639</NorthLatitude>
+            <EastLongitude>-122.101607</EastLongitude>
+          </BoundingBox>
+          <DistanceUnit>Kilometer</DistanceUnit>
+          <DurationUnit>Second</DurationUnit>
+          <TravelDistance>40.285</TravelDistance>
+          <TravelDuration>29005</TravelDuration>
+          <TravelDurationTraffic>29005</TravelDurationTraffic>
+          <TrafficDataUsed>None</TrafficDataUsed>
+          <TrafficCongestion>None</TrafficCongestion>
+          <RouteLeg>
+            <TravelDistance>40.285</TravelDistance>
+            <TravelDuration>29005</TravelDuration>
+            <Cost>0</Cost>
+            <ActualStart>
+              <Latitude>47.693372</Latitude>
+              <Longitude>-122.104532</Longitude>
+            </ActualStart>
+            <ActualEnd>
+              <Latitude>47.446068</Latitude>
+              <Longitude>-122.296703</Longitude>
+            </ActualEnd>
+            <StartLocation>
+              <Name>17609 NE 104th Way, Redmond, WA 98052</Name>
+              <Point>
+                <Latitude>47.69311</Latitude>
+                <Longitude>-122.10471</Longitude>
+              </Point>
+              <BoundingBox>
+                <SouthLatitude>47.689247</SouthLatitude>
+                <WestLongitude>-122.112361</WestLongitude>
+                <NorthLatitude>47.696973</NorthLatitude>
+                <EastLongitude>-122.097059</EastLongitude>
+              </BoundingBox>
+              <EntityType>Address</EntityType>
+              <Address>
+                <AddressLine>17609 NE 104th Way</AddressLine>
+                <AdminDistrict>WA</AdminDistrict>
+                <AdminDistrict2>King County</AdminDistrict2>
+                <CountryRegion>United States</CountryRegion>
+                <FormattedAddress>17609 NE 104th Way, Redmond, WA 98052</FormattedAddress>
+                <Locality>Redmond</Locality>
+                <PostalCode>98052</PostalCode>
+              </Address>
+              <Confidence>High</Confidence>
+              <MatchCode>Good</MatchCode>
+              <GeocodePoint>
+                <Latitude>47.69311</Latitude>
+                <Longitude>-122.10471</Longitude>
+                <CalculationMethod>Rooftop</CalculationMethod>
+                <UsageType>Display</UsageType>
+              </GeocodePoint>
+              <GeocodePoint>
+                <Latitude>47.693372</Latitude>
+                <Longitude>-122.104532</Longitude>
+                <CalculationMethod>Rooftop</CalculationMethod>
+                <UsageType>Route</UsageType>
+              </GeocodePoint>
+            </StartLocation>
+            <EndLocation>
+              <Name>SeaTac/Airport, WA</Name>
+              <Point>
+                <Latitude>47.446068</Latitude>
+                <Longitude>-122.296707</Longitude>
+              </Point>
+              <BoundingBox>
+                <SouthLatitude>47.442205</SouthLatitude>
+                <WestLongitude>-122.304322</WestLongitude>
+                <NorthLatitude>47.449931</NorthLatitude>
+                <EastLongitude>-122.289092</EastLongitude>
+              </BoundingBox>
+              <EntityType>MetroStation</EntityType>
+              <Address>
+                <AdminDistrict>WA</AdminDistrict>
+                <AdminDistrict2>King County</AdminDistrict2>
+                <CountryRegion>United States</CountryRegion>
+                <FormattedAddress>SeaTac/Airport, WA</FormattedAddress>
+                <Locality>Seattle</Locality>
+              </Address>
+              <Confidence>High</Confidence>
+              <MatchCode>Good</MatchCode>
+              <GeocodePoint>
+                <Latitude>47.446068</Latitude>
+                <Longitude>-122.296707</Longitude>
+                <CalculationMethod>Rooftop</CalculationMethod>
+                <UsageType>Display</UsageType>
+              </GeocodePoint>
+            </EndLocation>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.017</TravelDistance>
+              <TravelDuration>12</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.693372</Latitude>
+                <Longitude>-122.104532</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="DepartStart">Head west on NE 104th Way toward 176th Pl NE</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>DepartStart</ManeuverType>
+                <StartPathIndex>0</StartPathIndex>
+                <EndPathIndex>2</EndPathIndex>
+                <Name>NE 104th Way</Name>
+                <CompassDegrees>290</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <TowardsRoadName>176th Pl NE</TowardsRoadName>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.072</TravelDistance>
+              <TravelDuration>51</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.693474</Latitude>
+                <Longitude>-122.104698</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to 176th Pl NE</Instruction>
+              <CompassDirection>northwest</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>2</StartPathIndex>
+                <EndPathIndex>6</EndPathIndex>
+                <Name>176th Pl NE</Name>
+                <CompassDegrees>320</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.144</TravelDistance>
+              <TravelDuration>103</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.69411</Latitude>
+                <Longitude>-122.104849</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto NE 105th St</Instruction>
+              <CompassDirection>east</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>6</StartPathIndex>
+                <EndPathIndex>9</EndPathIndex>
+                <Name>NE 105th St</Name>
+                <CompassDegrees>86</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.257</TravelDistance>
+              <TravelDuration>185</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.694639</Latitude>
+                <Longitude>-122.103297</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto 179th Ave NE</Instruction>
+              <CompassDirection>southeast</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>9</StartPathIndex>
+                <EndPathIndex>13</EndPathIndex>
+                <Name>179th Ave NE</Name>
+                <CompassDegrees>112</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.5</TravelDistance>
+              <TravelDuration>360</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.69287</Latitude>
+                <Longitude>-122.101607</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto NE 104th St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>13</StartPathIndex>
+                <EndPathIndex>15</EndPathIndex>
+                <Name>NE 104th St</Name>
+                <CompassDegrees>269</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.099</TravelDistance>
+              <TravelDuration>71</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.692872</Latitude>
+                <Longitude>-122.108282</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto path</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>15</StartPathIndex>
+                <EndPathIndex>18</EndPathIndex>
+                <CompassDegrees>194</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>WalkingPath</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.113</TravelDistance>
+              <TravelDuration>81</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.692145</Latitude>
+                <Longitude>-122.108728</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto path</Instruction>
+              <CompassDirection>southeast</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>18</StartPathIndex>
+                <EndPathIndex>22</EndPathIndex>
+                <CompassDegrees>124</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>WalkingPath</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.036</TravelDistance>
+              <TravelDuration>25</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.691291</Latitude>
+                <Longitude>-122.109027</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto path</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>22</StartPathIndex>
+                <EndPathIndex>25</EndPathIndex>
+                <CompassDegrees>162</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>WalkingPath</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.2</TravelDistance>
+              <TravelDuration>144</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.691015</Latitude>
+                <Longitude>-122.109188</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto path</Instruction>
+              <CompassDirection>northwest</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>25</StartPathIndex>
+                <EndPathIndex>31</EndPathIndex>
+                <CompassDegrees>303</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>WalkingPath</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.185</TravelDistance>
+              <TravelDuration>132</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.69006</Latitude>
+                <Longitude>-122.110834</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeftThenTurnRight">Turn left, and then immediately turn right onto Ashford Trail</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>31</StartPathIndex>
+                <EndPathIndex>33</EndPathIndex>
+                <CompassDegrees>194</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>33</StartPathIndex>
+                <EndPathIndex>36</EndPathIndex>
+                <Name>Ashford Trail</Name>
+                <CompassDegrees>270</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>WalkingPath</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.423</TravelDistance>
+              <TravelDuration>304</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.689273</Latitude>
+                <Longitude>-122.112268</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to NE 100th St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>36</StartPathIndex>
+                <EndPathIndex>38</EndPathIndex>
+                <Name>NE 100th St</Name>
+                <CompassDegrees>285</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>1.62</TravelDistance>
+              <TravelDuration>1166</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.689297</Latitude>
+                <Longitude>-122.117942</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto 166th Ave NE</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>38</StartPathIndex>
+                <EndPathIndex>44</EndPathIndex>
+                <Name>166th Ave NE</Name>
+                <CompassDegrees>172</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.24</TravelDistance>
+              <TravelDuration>172</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.674862</Latitude>
+                <Longitude>-122.119183</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto NE 80th St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>44</StartPathIndex>
+                <EndPathIndex>46</EndPathIndex>
+                <Name>NE 80th St</Name>
+                <CompassDegrees>270</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.701</TravelDistance>
+              <TravelDuration>504</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.674875</Latitude>
+                <Longitude>-122.122387</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto Leary Way NE</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>46</StartPathIndex>
+                <EndPathIndex>51</EndPathIndex>
+                <Name>Leary Way NE</Name>
+                <CompassDegrees>202</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-10641</LocationCode>
+                <LocationCode>114N10642</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.012</TravelDistance>
+              <TravelDuration>8</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.670265</Latitude>
+                <Longitude>-122.128121</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto Sammamish River Trail</Instruction>
+              <CompassDirection>northwest</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>51</StartPathIndex>
+                <EndPathIndex>52</EndPathIndex>
+                <Name>Sammamish River Trail</Name>
+                <CompassDegrees>299</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>WalkingPath</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>2.023</TravelDistance>
+              <TravelDuration>1456</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.670334</Latitude>
+                <Longitude>-122.128245</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="BearLeft">Bear left toward NE 51st St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>BearLeft</ManeuverType>
+                <StartPathIndex>52</StartPathIndex>
+                <EndPathIndex>68</EndPathIndex>
+                <CompassDegrees>248</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>WalkingPath</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.121</TravelDistance>
+              <TravelDuration>87</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.65462</Latitude>
+                <Longitude>-122.139256</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto NE 51st St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>68</StartPathIndex>
+                <EndPathIndex>70</EndPathIndex>
+                <Name>NE 51st St</Name>
+                <CompassDegrees>275</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-08955</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.174</TravelDistance>
+              <TravelDuration>125</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.654771</Latitude>
+                <Longitude>-122.140851</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto 150th Ave NE</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>70</StartPathIndex>
+                <EndPathIndex>73</EndPathIndex>
+                <Name>150th Ave NE</Name>
+                <CompassDegrees>185</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>4.941</TravelDistance>
+              <TravelDuration>3556</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.653212</Latitude>
+                <Longitude>-122.141039</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRightThenTurnLeft">Turn right, and then immediately turn left onto 148th Ave NE</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>73</StartPathIndex>
+                <EndPathIndex>77</EndPathIndex>
+                <CompassDegrees>272</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>77</StartPathIndex>
+                <EndPathIndex>90</EndPathIndex>
+                <Name>148th Ave NE</Name>
+                <CompassDegrees>178</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+                <LocationCode>114-09343</LocationCode>
+                <LocationCode>114N09343</LocationCode>
+                <LocationCode>114-09342</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>1.22</TravelDistance>
+              <TravelDuration>878</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.60986</Latitude>
+                <Longitude>-122.143072</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="KeepStraight">Keep straight onto 148th Ave SE</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>KeepStraight</ManeuverType>
+                <StartPathIndex>90</StartPathIndex>
+                <EndPathIndex>96</EndPathIndex>
+                <Name>148th Ave SE</Name>
+                <CompassDegrees>177</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.425</TravelDistance>
+              <TravelDuration>306</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.598905</Latitude>
+                <Longitude>-122.14268</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto Lake Hills Blvd</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>96</StartPathIndex>
+                <EndPathIndex>101</EndPathIndex>
+                <Name>Lake Hills Blvd</Name>
+                <CompassDegrees>249</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.153</TravelDistance>
+              <TravelDuration>110</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.597697</Latitude>
+                <Longitude>-122.147649</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto 143rd Ave SE</Instruction>
+              <CompassDirection>southeast</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>101</StartPathIndex>
+                <EndPathIndex>104</EndPathIndex>
+                <Name>143rd Ave SE</Name>
+                <CompassDegrees>149</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.2</TravelDistance>
+              <TravelDuration>144</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.596344</Latitude>
+                <Longitude>-122.147379</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto SE 16th St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>104</StartPathIndex>
+                <EndPathIndex>107</EndPathIndex>
+                <Name>SE 16th St</Name>
+                <CompassDegrees>270</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-08707</LocationCode>
+                <LocationCode>114N08707</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.717</TravelDistance>
+              <TravelDuration>516</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.596109</Latitude>
+                <Longitude>-122.149963</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to 140th Pl SE</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>107</StartPathIndex>
+                <EndPathIndex>113</EndPathIndex>
+                <Name>140th Pl SE</Name>
+                <CompassDegrees>240</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-15916</LocationCode>
+                <LocationCode>114N15916</LocationCode>
+                <LocationCode>114-15913</LocationCode>
+                <LocationCode>114N15914</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.327</TravelDistance>
+              <TravelDuration>235</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.590083</Latitude>
+                <Longitude>-122.152848</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="KeepStraight">Keep straight onto Kamber Rd</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>KeepStraight</ManeuverType>
+                <StartPathIndex>113</StartPathIndex>
+                <EndPathIndex>115</EndPathIndex>
+                <Name>Kamber Rd</Name>
+                <CompassDegrees>218</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.691</TravelDistance>
+              <TravelDuration>497</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.587674</Latitude>
+                <Longitude>-122.155334</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to SE 26th St</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>115</StartPathIndex>
+                <EndPathIndex>119</EndPathIndex>
+                <Name>SE 26th St</Name>
+                <CompassDegrees>237</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-15913</LocationCode>
+                <LocationCode>114N15913</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.855</TravelDistance>
+              <TravelDuration>615</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.587328</Latitude>
+                <Longitude>-122.16435799999999</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto Richards Rd</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>119</StartPathIndex>
+                <EndPathIndex>127</EndPathIndex>
+                <Name>Richards Rd</Name>
+                <CompassDegrees>184</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-11224</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>1.198</TravelDistance>
+              <TravelDuration>862</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.580455</Latitude>
+                <Longitude>-122.169046</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to Factoria Blvd SE</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>127</StartPathIndex>
+                <EndPathIndex>136</EndPathIndex>
+                <Name>Factoria Blvd SE</Name>
+                <CompassDegrees>185</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-10268</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.477</TravelDistance>
+              <TravelDuration>343</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.569759</Latitude>
+                <Longitude>-122.16948</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right toward 124th Ave SE</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Warning warningType="PrivateRoad" severity="None">Private Road<startTime /><endTime /></Warning>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>136</StartPathIndex>
+                <EndPathIndex>146</EndPathIndex>
+                <CompassDegrees>265</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.144</TravelDistance>
+              <TravelDuration>103</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.567506</Latitude>
+                <Longitude>-122.174509</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto 124th Ave SE</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>146</StartPathIndex>
+                <EndPathIndex>149</EndPathIndex>
+                <Name>124th Ave SE</Name>
+                <CompassDegrees>180</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.325</TravelDistance>
+              <TravelDuration>234</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.566231</Latitude>
+                <Longitude>-122.17477</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto Coal Creek Pkwy SE</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>149</StartPathIndex>
+                <EndPathIndex>151</EndPathIndex>
+                <Name>Coal Creek Pkwy SE</Name>
+                <CompassDegrees>280</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>2.085</TravelDistance>
+              <TravelDuration>1501</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.567137</Latitude>
+                <Longitude>-122.178888</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto 119th Ave SE</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>151</StartPathIndex>
+                <EndPathIndex>170</EndPathIndex>
+                <Name>119th Ave SE</Name>
+                <CompassDegrees>223</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.858</TravelDistance>
+              <TravelDuration>617</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.549774</Latitude>
+                <Longitude>-122.179286</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto SE 60th St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>170</StartPathIndex>
+                <EndPathIndex>175</EndPathIndex>
+                <Name>SE 60th St</Name>
+                <CompassDegrees>251</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.179</TravelDistance>
+              <TravelDuration>128</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.54955</Latitude>
+                <Longitude>-122.190468</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto Lake Washington Blvd SE</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>175</StartPathIndex>
+                <EndPathIndex>178</EndPathIndex>
+                <Name>Lake Washington Blvd SE</Name>
+                <CompassDegrees>210</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-10589</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.224</TravelDistance>
+              <TravelDuration>161</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.547996</Latitude>
+                <Longitude>-122.190925</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="KeepStraight">Keep straight onto 112th Ave SE</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>KeepStraight</ManeuverType>
+                <StartPathIndex>178</StartPathIndex>
+                <EndPathIndex>180</EndPathIndex>
+                <Name>112th Ave SE</Name>
+                <CompassDegrees>178</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-10589</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>1.011</TravelDistance>
+              <TravelDuration>727</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.54597</Latitude>
+                <Longitude>-122.190913</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="BearThenKeep">Bear right onto Lake Washington Blvd SE</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>BearRight</ManeuverType>
+                <StartPathIndex>180</StartPathIndex>
+                <EndPathIndex>182</EndPathIndex>
+                <CompassDegrees>213</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Detail>
+                <ManeuverType>KeepStraight</ManeuverType>
+                <StartPathIndex>182</StartPathIndex>
+                <EndPathIndex>192</EndPathIndex>
+                <Name>Lake Washington Blvd SE</Name>
+                <CompassDegrees>239</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.654</TravelDistance>
+              <TravelDuration>470</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.537931</Latitude>
+                <Longitude>-122.192886</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to Lake Washington Blvd NE</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>192</StartPathIndex>
+                <EndPathIndex>198</EndPathIndex>
+                <Name>Lake Washington Blvd NE</Name>
+                <CompassDegrees>218</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.319</TravelDistance>
+              <TravelDuration>229</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.532618</Latitude>
+                <Longitude>-122.19603</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto NE 44th St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>198</StartPathIndex>
+                <EndPathIndex>203</EndPathIndex>
+                <Name>NE 44th St</Name>
+                <CompassDegrees>264</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114N08915</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>3.816</TravelDistance>
+              <TravelDuration>2747</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.531545</Latitude>
+                <Longitude>-122.199521</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="KeepStraight">Keep straight onto Lake Washington Blvd N</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>KeepStraight</ManeuverType>
+                <StartPathIndex>203</StartPathIndex>
+                <EndPathIndex>229</EndPathIndex>
+                <Name>Lake Washington Blvd N</Name>
+                <CompassDegrees>237</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.046</TravelDistance>
+              <TravelDuration>33</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.5012</Latitude>
+                <Longitude>-122.201113</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to Garden Ave N</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>229</StartPathIndex>
+                <EndPathIndex>233</EndPathIndex>
+                <Name>Garden Ave N</Name>
+                <CompassDegrees>165</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.193</TravelDistance>
+              <TravelDuration>138</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.50082</Latitude>
+                <Longitude>-122.2009</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto N Southport Dr</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>233</StartPathIndex>
+                <EndPathIndex>236</EndPathIndex>
+                <Name>N Southport Dr</Name>
+                <CompassDegrees>235</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-11061</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>1.602</TravelDistance>
+              <TravelDuration>1153</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.499635</Latitude>
+                <Longitude>-122.202764</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to Logan Ave N</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>236</StartPathIndex>
+                <EndPathIndex>251</EndPathIndex>
+                <Name>Logan Ave N</Name>
+                <CompassDegrees>243</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-51394</LocationCode>
+                <LocationCode>114N51395</LocationCode>
+                <LocationCode>114N51394</LocationCode>
+                <LocationCode>114-51393</LocationCode>
+                <LocationCode>114-51392</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.624</TravelDistance>
+              <TravelDuration>449</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.486833</Latitude>
+                <Longitude>-122.208676</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="RoadNameChange">Road name changes to Logan Ave S</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>RoadNameChange</ManeuverType>
+                <StartPathIndex>251</StartPathIndex>
+                <EndPathIndex>256</EndPathIndex>
+                <Name>Logan Ave S</Name>
+                <CompassDegrees>200</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-51392</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.311</TravelDistance>
+              <TravelDuration>223</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.481246</Latitude>
+                <Longitude>-122.209142</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto WA-900 / S 2nd St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>256</StartPathIndex>
+                <EndPathIndex>259</EndPathIndex>
+                <Name>S 2nd St</Name>
+                <CompassDegrees>270</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <RoadShieldRequestParameters>
+                  <Bucket>656036</Bucket>
+                  <Shield>
+                    <RoadShieldType>3</RoadShieldType>
+                    <Label>900</Label>
+                  </Shield>
+                </RoadShieldRequestParameters>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.466</TravelDistance>
+              <TravelDuration>335</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.481159</Latitude>
+                <Longitude>-122.213268</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto Shattuck Ave S</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>259</StartPathIndex>
+                <EndPathIndex>261</EndPathIndex>
+                <Name>Shattuck Ave S</Name>
+                <CompassDegrees>180</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.167</TravelDistance>
+              <TravelDuration>120</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.476968</Latitude>
+                <Longitude>-122.213324</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto S 4th Pl</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>261</StartPathIndex>
+                <EndPathIndex>263</EndPathIndex>
+                <Name>S 4th Pl</Name>
+                <CompassDegrees>259</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.688</TravelDistance>
+              <TravelDuration>495</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.476586</Latitude>
+                <Longitude>-122.215459</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto WA-167 / Rainier Ave S</Instruction>
+              <CompassDirection>southeast</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>263</StartPathIndex>
+                <EndPathIndex>271</EndPathIndex>
+                <Name>Rainier Ave S</Name>
+                <CompassDegrees>153</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <RoadShieldRequestParameters>
+                  <Bucket>656036</Bucket>
+                  <Shield>
+                    <RoadShieldType>3</RoadShieldType>
+                    <Label>167</Label>
+                  </Shield>
+                </RoadShieldRequestParameters>
+                <LocationCode>114-11172</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>2.267</TravelDistance>
+              <TravelDuration>1632</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.471094</Latitude>
+                <Longitude>-122.218003</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto SW Grady Way</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>271</StartPathIndex>
+                <EndPathIndex>277</EndPathIndex>
+                <Name>SW Grady Way</Name>
+                <CompassDegrees>262</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114-10335</LocationCode>
+                <LocationCode>114N10335</LocationCode>
+                <LocationCode>114N11332</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>3.389</TravelDistance>
+              <TravelDuration>2440</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.4644</Latitude>
+                <Longitude>-122.246177</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="BearRight">Bear right onto Southcenter Blvd</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>BearRight</ManeuverType>
+                <StartPathIndex>277</StartPathIndex>
+                <EndPathIndex>297</EndPathIndex>
+                <Name>Southcenter Blvd</Name>
+                <CompassDegrees>259</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+                <LocationCode>114N10335</LocationCode>
+                <LocationCode>114N11332</LocationCode>
+                <LocationCode>114-11331</LocationCode>
+                <LocationCode>114N11331</LocationCode>
+                <LocationCode>114-11330</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.433</TravelDistance>
+              <TravelDuration>311</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.465125</Latitude>
+                <Longitude>-122.288916</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto WA-99 / International Blvd</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>297</StartPathIndex>
+                <EndPathIndex>300</EndPathIndex>
+                <Name>International Blvd</Name>
+                <CompassDegrees>206</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>MajorRoad</RoadType>
+                <RoadShieldRequestParameters>
+                  <Bucket>656028</Bucket>
+                  <Shield>
+                    <RoadShieldType>3</RoadShieldType>
+                    <Label>99</Label>
+                  </Shield>
+                </RoadShieldRequestParameters>
+                <LocationCode>114-04617</LocationCode>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.325</TravelDistance>
+              <TravelDuration>234</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.461534</Latitude>
+                <Longitude>-122.29089</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="BearRight">Bear right toward S 160th St</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>BearRight</ManeuverType>
+                <StartPathIndex>300</StartPathIndex>
+                <EndPathIndex>306</EndPathIndex>
+                <CompassDegrees>231</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.215</TravelDistance>
+              <TravelDuration>154</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.459684</Latitude>
+                <Longitude>-122.294064</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="KeepStraight">Keep straight onto S 160th St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>KeepStraight</ManeuverType>
+                <StartPathIndex>306</StartPathIndex>
+                <EndPathIndex>308</EndPathIndex>
+                <Name>S 160th St</Name>
+                <CompassDegrees>269</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Arterial</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.172</TravelDistance>
+              <TravelDuration>123</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.459653</Latitude>
+                <Longitude>-122.296931</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnLeft">Turn left onto Host Rd S</Instruction>
+              <CompassDirection>southwest</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>308</StartPathIndex>
+                <EndPathIndex>311</EndPathIndex>
+                <Name>Host Rd S</Name>
+                <CompassDegrees>202</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.247</TravelDistance>
+              <TravelDuration>177</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.458141</Latitude>
+                <Longitude>-122.297293</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRight">Turn right onto S 163rd St</Instruction>
+              <CompassDirection>west</CompassDirection>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>311</StartPathIndex>
+                <EndPathIndex>316</EndPathIndex>
+                <Name>S 163rd St</Name>
+                <CompassDegrees>267</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0.221</TravelDistance>
+              <TravelDuration>159</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.456972</Latitude>
+                <Longitude>-122.299754</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="BearLeft">Bear left onto road</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Warning warningType="PrivateRoad" severity="None">Private Road<startTime /><endTime /></Warning>
+              <Detail>
+                <ManeuverType>BearLeft</ManeuverType>
+                <StartPathIndex>316</StartPathIndex>
+                <EndPathIndex>318</EndPathIndex>
+                <CompassDegrees>179</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>1.163</TravelDistance>
+              <TravelDuration>837</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.455003</Latitude>
+                <Longitude>-122.299783</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="TurnRightThenTurnLeft">Turn right, and then immediately turn left onto Airport Expy</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Warning warningType="PrivateRoad" severity="None">Private Road<startTime /><endTime /></Warning>
+              <Detail>
+                <ManeuverType>TurnRight</ManeuverType>
+                <StartPathIndex>318</StartPathIndex>
+                <EndPathIndex>319</EndPathIndex>
+                <CompassDegrees>304</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>Street</RoadType>
+              </Detail>
+              <Detail>
+                <ManeuverType>TurnLeft</ManeuverType>
+                <StartPathIndex>319</StartPathIndex>
+                <EndPathIndex>328</EndPathIndex>
+                <Name>Airport Expy</Name>
+                <CompassDegrees>180</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>MajorRoad</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <ItineraryItem>
+              <TravelMode>Walking</TravelMode>
+              <TravelDistance>0</TravelDistance>
+              <TravelDuration>0</TravelDuration>
+              <ManeuverPoint>
+                <Latitude>47.446068</Latitude>
+                <Longitude>-122.296703</Longitude>
+              </ManeuverPoint>
+              <Instruction maneuverType="ArriveFinish">Arrive at SeaTac/Airport, WA</Instruction>
+              <CompassDirection>south</CompassDirection>
+              <Hint hintType="PreviousIntersection">The last intersection is S 163rd St</Hint>
+              <Hint hintType="NextIntersection">If you reach Departures Dr, you've gone too far</Hint>
+              <Detail>
+                <ManeuverType>ArriveFinish</ManeuverType>
+                <StartPathIndex>328</StartPathIndex>
+                <EndPathIndex>328</EndPathIndex>
+                <Name>Airport Expy</Name>
+                <CompassDegrees>175</CompassDegrees>
+                <Mode>Walking</Mode>
+                <PreviousEntityId>0</PreviousEntityId>
+                <NextEntityId>0</NextEntityId>
+                <RoadType>MajorRoad</RoadType>
+              </Detail>
+              <Exit />
+              <TollZone />
+              <TransitTerminus />
+              <TripId>0</TripId>
+              <IconType>Walk</IconType>
+              <Time>0001-01-01T00:00:00</Time>
+              <TransitStopId>0</TransitStopId>
+              <SideOfStreet>Unknown</SideOfStreet>
+              <BikesAllowed xsi:nil="true" />
+              <WheelchairAccessible xsi:nil="true" />
+              <IsRealTimeTransit>false</IsRealTimeTransit>
+              <RealTimeTransitDelay>0</RealTimeTransitDelay>
+            </ItineraryItem>
+            <RouteSubLeg>
+              <TravelDistance>40.285</TravelDistance>
+              <TravelDuration>29005</TravelDuration>
+              <StartWaypoint>
+                <Latitude>47.693372</Latitude>
+                <Longitude>-122.104532</Longitude>
+                <Description>17609 NE 104th Way, Redmond, WA 98052</Description>
+                <IsVia>false</IsVia>
+                <LocationIdentifier>0|146|58|112|103|137|25|232|0|0|0|224|1|0|0|128|63|0|47.693372,-122.104532</LocationIdentifier>
+                <RoutePathIndex>0</RoutePathIndex>
+              </StartWaypoint>
+              <EndWaypoint>
+                <Latitude>47.446068</Latitude>
+                <Longitude>-122.296703</Longitude>
+                <Description>SeaTac/Airport, WA</Description>
+                <IsVia>false</IsVia>
+                <LocationIdentifier>0|146|58|112|103|33|131|249|0|0|0|224|1|140|153|21|63|0|47.446068,-122.296703</LocationIdentifier>
+                <RoutePathIndex>328</RoutePathIndex>
+              </EndWaypoint>
+            </RouteSubLeg>
+            <StartTime>0001-01-01T00:00:00</StartTime>
+            <EndTime>0001-01-01T00:00:00</EndTime>
+            <Description>148th Ave NE, Lake Washington Blvd N</Description>
+            <RouteRegion>WWMX</RouteRegion>
+          </RouteLeg>
+          <TravelMode>Walking</TravelMode>
+        </Route>
+      </Resources>
+    </ResourceSet>
+  </ResourceSets>
+</Response>

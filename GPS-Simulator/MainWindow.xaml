@@ -7,6 +7,20 @@
         xmlns:local="clr-namespace:GPS_Simulator"
         mc:Ignorable="d"
         Title="GPS-Simulator" Height="900" Width="1280">
+
+    <Window.Resources>
+        <ContextMenu x:Key="cmPushpin">
+            <MenuItem Name="AddPinBeforeMenuItem" Header="Add Pin Before" Click="AddPinBeforeMenuItem_Click"/>
+            <MenuItem Name="AddPinAfterMenuItem" Header="Add Pin After" Click="AddPinAfterMenuItem_Click"/>
+            <MenuItem Name="RemovePinMenuItem" Header="Remove Pin" Click="RemovePinMenuItem_Click"/>
+        </ContextMenu>
+        <ContextMenu x:Key="cmMap">
+            <MenuItem Name="TeleportHereMenuItem" Header="Teleport Here" Click="TeleportHereMenuItem_Click"/>
+            <MenuItem Name="WalkHereMenuItem" Header="Walk Here" Click="WalkHereMenuItem_Click"/>
+            <MenuItem Name="WalkHereByDirections" Header="Walk Here Using Directions" Click="WalkHereByDirectionsMenutItem_Click"/>
+        </ContextMenu>
+    </Window.Resources>
+    
     <DockPanel LastChildFill="true">
         <!--map view-->
 
@@ -26,11 +40,13 @@
 
             <!--walking control-->
             <GroupBox Header="Walking Route" HorizontalAlignment="Left" Margin="10,5" VerticalAlignment="Top" Width="225">
-                <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-                    <Button x:Name ="option" Content="Load GPX" HorizontalAlignment="Left" Height="26" Margin="10,5" VerticalAlignment="Top" Width="182" Click="option_Button_Click"/>
-                    <Button x:Name="save_gpx_button" Content="Save to GPX" HorizontalAlignment="Left" Height="26" Margin="10,5" Width="182" VerticalAlignment="Top" Click="save_gpx_button_Click"/>
-                    <Button x:Name ="walking" Content="Start" HorizontalAlignment="Left" Height="26" Margin="10,5" VerticalAlignment="Top" Width="182" Click="walk_Button_Click"/>
-                    <Button x:Name ="stop_button" Content="Stop" HorizontalAlignment="Left" Height="26" Margin="10,5" VerticalAlignment="Top" Width="182" Click="stop_Button_Click"/>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                    <Label x:Name="walking_mode_label" Content="Walking Mode:" HorizontalAlignment="Stretch" />
+                    <Button x:Name ="load_gpx_button" Content="Load GPX" HorizontalAlignment="Stretch" Height="26" Margin="10,5" VerticalAlignment="Top"  Click="load_gpx_button_Click"/>
+                    <Button x:Name="save_gpx_button" Content="Save to GPX" HorizontalAlignment="Stretch" Height="26" Margin="10,5"  VerticalAlignment="Top" Click="SaveGpxButton_Click"/>
+                    <Button x:Name="walk_route_button" Content="Walk Route" HorizontalAlignment="Stretch" Margin="10,5" Click="walk_route_button_Click"/>
+                    <Button x:Name ="walking" Content="Start" HorizontalAlignment="Stretch" Height="26" Margin="10,5" VerticalAlignment="Top"  Click="walk_Button_Click"/>
+                    <Button x:Name ="stop_button" Content="Stop" HorizontalAlignment="Stretch" Height="26" Margin="10,5" VerticalAlignment="Top" Click="stop_Button_Click"/>
                 </StackPanel>
             </GroupBox>
 
@@ -80,9 +96,6 @@
             Center="47.693227, -122.104748" 
             CredentialsProvider="MRoghxvRwiH04GVvGpg4~uaP_it5CCQ6ckz-j9tA_iQ~AoPUZFQPIn9s1qjKPLgkvgeGPZPKznUlqM_e0fPu8NCXTi_ZSZTDud4_j0F1SkKU" 
             ZoomLevel="16" 
-            MouseDoubleClick="Map_MouseDoubleClick"
-            MouseMove="map_MouseMove"
-            MouseUp="map_MouseUp"
             Mode="Road" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,0">
         </m:Map>
     </DockPanel>

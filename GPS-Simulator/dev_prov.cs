@@ -136,7 +136,7 @@ namespace GPS_Simulator
 
             // 1.download the DDI package.
             this.detailed_devinfo.Text += "1. Download provisioning package for your device....\n";
-            string prov_pkg_url = device_utils.get_ddi_image_url(device);
+            string prov_pkg_url = DeviceUtils.get_ddi_image_url(device);
 
             // make sure the temp directory exists.  If not, create it
             string tmpPath = Path.GetTempPath();
@@ -214,7 +214,7 @@ namespace GPS_Simulator
             p.Start();
             p.WaitForExit();
 
-            if (device_utils.is_device_on_dev_mode(device.UDID))
+            if (DeviceUtils.is_device_on_dev_mode(device.UDID))
             {
                 this.detailed_devinfo.Text += "Done.\n";
                 this.detailed_devinfo.Text += "Congratulations, your device is provisioned successfully, " +

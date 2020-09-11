@@ -74,6 +74,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -99,8 +100,11 @@
     <Compile Include="dev_prov.Designer.cs">
       <DependentUpon>dev_prov.cs</DependentUpon>
     </Compile>
-    <Compile Include="device_conn.cs" />
-    <Compile Include="walking_timer_callback.cs" />
+    <Compile Include="DeviceUtils.cs" />
+    <Compile Include="GpxUtils.cs" />
+    <Compile Include="MapUIManager.cs" />
+    <Compile Include="Navigator.cs" />
+    <Compile Include="WebServices.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
