@@ -224,6 +224,8 @@ namespace GPS_Simulator
                 double bearing = Bearing(route[curRouteIndex],
                     route[curRouteIndex + 1]);
 
+                bearing = Bearing(CurrentLocation, route[curRouteIndex + 1]);
+
                 next_location = FindPointAtDistanceFrom(CurrentLocation,
                     bearing,
                     dis_walk_500ms);

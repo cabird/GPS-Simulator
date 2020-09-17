@@ -69,9 +69,9 @@ namespace GPS_Simulator
             InitializeComponent();
 
             // default is walking
-            walking_speed.IsChecked = true;
-            running_speed.IsChecked = false;
-            driving_speed.IsChecked = false;
+            //walking_speed.IsChecked = true;
+            //running_speed.IsChecked = false;
+            //driving_speed.IsChecked = false;
 
             // load native libraries for iDevice
             NativeLibraries.Load();
@@ -395,6 +395,28 @@ namespace GPS_Simulator
             }
         }
 
+        private void search_result_list_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (g_query_result.Count <= 0 || search_result_list.SelectedIndex < 0)
+            {
+                return;
+            }
+            else
+            {
+                list_item it = g_query_result[search_result_list.SelectedIndex];
+                lat.Text = it.loc.Latitude.ToString();
+                lon.Text = it.loc.Longitude.ToString();
+                alt.Text = it.loc.Altitude.ToString();
+
+                if (navigator.WalkingState != WalkingState.Stopped)
+                {
+                    System.Windows.Forms.MessageBox.Show("Quit from walking mode first.");
+                    return;
+                }
+                TeleportToLocation(it.loc);
+            }
+        }
+
         private void SaveGpxButton_Click(object sender, RoutedEventArgs e)
         {
             e.Handled = true;
@@ -443,6 +465,20 @@ namespace GPS_Simulator
         private void AddPinAfterMenuItem_Click(object sender, RoutedEventArgs e) => uiMgr.AddPinAfterMenuItem_Click(sender, e);
         private void RemovePinMenuItem_Click(object sender, RoutedEventArgs e) => uiMgr.RemovePinMenuItem_Click(sender, e);
 
-       
+        private void WalkingSpeedSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            var walkingSpeed = Math.Round(WalkingSpeedSlider.Value);
+            WalkingSpeedLabel.Content = $"Walking Speed: {walkingSpeed} km/h";
+            if (navigator != null) navigator.walkingSpeed = walkingSpeed;
+        }
+
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                walk_Button_Click(sender, new RoutedEventArgs());
+                e.Handled = true;
+            }
+        }
     }
 }
