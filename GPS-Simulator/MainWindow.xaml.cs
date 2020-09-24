@@ -83,7 +83,7 @@ namespace GPS_Simulator
             walkingTimer.IsEnabled = true;
 
             navigator = new Navigator();
-            navigator.walkingSpeed = c_fast_walking_speed;
+            navigator.walkingSpeed = WalkingSpeedSlider.Value;
             navigator.WalkingState = WalkingState.Stopped;
 
             uiMgr = new MapUIManager(myMap, this);
@@ -474,7 +474,7 @@ namespace GPS_Simulator
 
         private void Window_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Space)
+            if (e.Key == Key.LeftCtrl || e.Key == Key.RightShift)
             {
                 walk_Button_Click(sender, new RoutedEventArgs());
                 e.Handled = true;

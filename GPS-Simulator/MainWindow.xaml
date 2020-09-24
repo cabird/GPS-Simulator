@@ -6,7 +6,7 @@
         xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
         xmlns:local="clr-namespace:GPS_Simulator"
         mc:Ignorable="d"
-        Title="GPS-Simulator" Height="900" Width="1280"
+        Title="GPS-Simulator" Height="600" Width="1000"
         KeyUp="Window_KeyUp">
 
     <Window.Resources>
@@ -25,8 +25,21 @@
     <DockPanel LastChildFill="true">
         <!--map view-->
 
+     
+
         <ScrollViewer DockPanel.Dock="Left">
             <StackPanel Orientation="Vertical">
+
+              <GroupBox Header="Walking" HorizontalAlignment="Left" Margin="10,5" VerticalAlignment="Top" Width="225">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                  <Label x:Name="walking_mode_label" Content="Walking Mode:" HorizontalAlignment="Stretch" />
+                  <Button x:Name ="walking" Content="Start" HorizontalAlignment="Stretch" Height="26" Margin="10,5" VerticalAlignment="Top"  Click="walk_Button_Click"/>
+                  <Button x:Name ="stop_button" Content="Stop" HorizontalAlignment="Stretch" Height="26" Margin="10,5" VerticalAlignment="Top" Click="stop_Button_Click"/>
+                  <Label Name="WalkingSpeedLabel" Content="Walking Speed: 0 km/h"/>
+                  <Slider Name="WalkingSpeedSlider" Value="12" Minimum="1" Maximum="100" TickFrequency="5" Margin="10,5" ValueChanged="WalkingSpeedSlider_ValueChanged"></Slider>
+                  <CheckBox x:Name="gps_drift" IsChecked="False" Content="GPS Drifting" HorizontalAlignment="Left" Margin="10,5" VerticalAlignment="Top" />
+                </StackPanel>
+              </GroupBox>
                 <!--Search-->
                 <GroupBox Header="Search" HorizontalAlignment="Left" Margin="10,5" VerticalAlignment="Top" Width="225">
                     <StackPanel Orientation="Vertical">
@@ -40,14 +53,10 @@
 
 
                 <!--walking control-->
-                <GroupBox Header="Walking Route" HorizontalAlignment="Left" Margin="10,5" VerticalAlignment="Top" Width="225">
+                <GroupBox Header="Route" HorizontalAlignment="Left" Margin="10,5" VerticalAlignment="Top" Width="225">
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
-                        <Label x:Name="walking_mode_label" Content="Walking Mode:" HorizontalAlignment="Stretch" />
                         <Button x:Name ="load_gpx_button" Content="Load GPX" HorizontalAlignment="Stretch" Height="26" Margin="10,5" VerticalAlignment="Top"  Click="load_gpx_button_Click"/>
                         <Button x:Name="save_gpx_button" Content="Save to GPX" HorizontalAlignment="Stretch" Height="26" Margin="10,5"  VerticalAlignment="Top" Click="SaveGpxButton_Click"/>
-                        <Button x:Name="walk_route_button" Content="Walk Route" HorizontalAlignment="Stretch" Margin="10,5" Click="walk_route_button_Click"/>
-                        <Button x:Name ="walking" Content="Start" HorizontalAlignment="Stretch" Height="26" Margin="10,5" VerticalAlignment="Top"  Click="walk_Button_Click"/>
-                        <Button x:Name ="stop_button" Content="Stop" HorizontalAlignment="Stretch" Height="26" Margin="10,5" VerticalAlignment="Top" Click="stop_Button_Click"/>
                     </StackPanel>
                 </GroupBox>
 
@@ -72,20 +81,6 @@
                         <Label  Grid.Column="0" Grid.Row="2" Content="Altitude" HorizontalAlignment="Left"  Margin="10,5" VerticalAlignment="Top" />
                         <Button Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Content="Teleport" HorizontalAlignment="Left"  Margin="10,5" VerticalAlignment="Top" Width="182" Click="tele_Button_Click"/>
                     </Grid>
-                </GroupBox>
-
-                <!--walking mode-->
-                <GroupBox Header="Speed" HorizontalAlignment="Left" Margin="10,5" VerticalAlignment="Top" Width="225">
-                    <StackPanel Orientation="Vertical">
-                        <Label Name="WalkingSpeedLabel" Content="Walking Speed: 0 km/h"/>
-                        <Slider Name="WalkingSpeedSlider" Value="12" Minimum="1" Maximum="100" TickFrequency="5" Margin="10,5" ValueChanged="WalkingSpeedSlider_ValueChanged"></Slider>
-                        <!--
-                    <RadioButton x:Name ="walking_speed" Content="Walk - 8.8km/h" HorizontalAlignment="Left"  Margin="10,5"  Click="walking_speed_click" />
-                    <RadioButton x:Name ="running_speed" Content="Run - 26.4km/h" HorizontalAlignment="Left" Margin="10,5"  Click="running_speed_click"/>
-                    <RadioButton x:Name ="driving_speed" Content="Drive - 105km/h" HorizontalAlignment="Left"  Margin="10,5" Click="driving_speed_click" />
-                    -->
-                        <CheckBox x:Name="gps_drift" IsChecked="True" Content="GPS Drifting" HorizontalAlignment="Left" Margin="10,5" VerticalAlignment="Top" />
-                    </StackPanel>
                 </GroupBox>
 
                 <!--device info and provision-->
